@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+    background: url('./Fondo/fondo.png') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Press Start 2P', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: #fff;
+}
+
+.pokedex {
+    text-align: center;
+}
+
+.search-container {
+    margin-bottom: 20px;
+}
+
+.search input {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px 0 0 5px;
+    border: 2px solid #333;
+    width: 200px;
+    outline: none;
+}
+
+.search button {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 0 5px 5px 0;
+    border: 2px solid #333;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+    outline: none;
+}
+
+.pokedex-card {
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    animation: fadeIn 1s ease-in-out;
+}
+
+.pokedex-card h2 {
+    margin: 0;
+    font-size: 20px;
+}
+
+.pokedex-card img {
+    width: 100px;
+    height: 100px;
+}
+
+.pokedex-card p {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
